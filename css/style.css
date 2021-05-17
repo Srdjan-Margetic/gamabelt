@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.landing-wrapper {
+  position: relative;
+  height: 100vh;
+  background: url("/img/bg.jpg") no-repeat center;
+  background-size: cover; }
+  .landing-wrapper .header {
+    display: flex;
+    padding: 0 20px;
+    color: #ffffff;
+    justify-content: space-between; }
+    .landing-wrapper .header .logo img {
+      width: 250px; }
+    .landing-wrapper .header .navigation {
+      width: 100%;
+      max-width: 60rem;
+      margin: auto 0; }
+      .landing-wrapper .header .navigation ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none; }
+        .landing-wrapper .header .navigation ul li {
+          vertical-align: middle; }
+          .landing-wrapper .header .navigation ul li a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: #ffffff; }
+  .landing-wrapper .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .landing-wrapper .intro-text h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 48px; }

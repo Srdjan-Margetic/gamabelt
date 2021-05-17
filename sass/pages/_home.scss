@@ -1,0 +1,52 @@
+.landing-wrapper {
+  position: relative;
+  height: 100vh;
+  background: url('/img/bg.jpg') no-repeat center;
+  background-size: cover;
+
+  .header {
+    display: flex;
+    padding: 0 20px;
+    color: $color-white;
+    justify-content: space-between;
+
+    .logo {
+      img {
+        width: 250px;
+      }
+    }
+
+    .navigation {
+      width: 100%;
+      max-width: 60rem;
+      margin: auto 0;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+        li {
+          vertical-align: middle;
+          a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      color: $color-white;
+      text-align: center;
+      font-size: 48px;
+    }
+  }
+}
