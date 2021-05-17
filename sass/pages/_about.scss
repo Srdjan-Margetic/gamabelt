@@ -1,0 +1,29 @@
+.about {
+  padding: 10rem 0;
+
+  &_title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  &_text {
+    text-align: center;
+    max-width: 620px;
+    margin: 3rem auto;
+    font-size: 1.6rem;
+  }
+  .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      border: 1px solid $color-grey-light;
+      width: 100%;
+      text-align: center;
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+  }
+}

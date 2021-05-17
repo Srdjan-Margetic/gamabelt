@@ -15,6 +15,27 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.about {
+  padding: 10rem 0; }
+  .about_title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.4rem; }
+  .about_text {
+    text-align: center;
+    max-width: 620px;
+    margin: 3rem auto;
+    font-size: 1.6rem; }
+  .about .card-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .about .card-wrapper .card {
+      border: 1px solid #8d8d8d;
+      width: 100%;
+      text-align: center; }
+      .about .card-wrapper .card:not(:last-child) {
+        border-right: none; }
+
 .landing-wrapper {
   position: relative;
   height: 100vh;
