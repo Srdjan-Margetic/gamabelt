@@ -20,10 +20,10 @@ body {
   .about_title {
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.4rem; }
+    font-size: 4rem; }
   .about_text {
     text-align: center;
-    max-width: 620px;
+    max-width: 1200px;
     margin: 3rem auto;
     font-size: 1.6rem; }
   .about .card-wrapper {
@@ -32,9 +32,42 @@ body {
     .about .card-wrapper .card {
       border: 1px solid #8d8d8d;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      padding: 3.5rem 0; }
       .about .card-wrapper .card:not(:last-child) {
         border-right: none; }
+      .about .card-wrapper .card .fas,
+      .about .card-wrapper .card .far {
+        font-size: 2.2rem;
+        color: blue;
+        margin-bottom: 1rem; }
+      .about .card-wrapper .card h3 {
+        margin-bottom: 1rem;
+        font-size: 2.2rem; }
+      .about .card-wrapper .card p {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        max-width: 80%;
+        margin: 0 auto;
+        line-height: 1.2; }
+  .about .our_customers {
+    background-color: #8d8d8d;
+    padding: 5rem 1rem; }
+    .about .our_customers .customers_title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1rem; }
+    .about .our_customers .customers_wrapper {
+      display: flex;
+      justify-content: space-around; }
+      .about .our_customers .customers_wrapper .customers {
+        font-size: 2rem;
+        width: calc(100% / 3);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold; }
 
 .landing-wrapper {
   position: relative;
@@ -70,4 +103,4 @@ body {
     .landing-wrapper .intro-text h1 {
       color: #ffffff;
       text-align: center;
-      font-size: 48px; }
+      font-size: 6rem; }

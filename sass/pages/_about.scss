@@ -4,12 +4,12 @@
   &_title {
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 4rem;
   }
 
   &_text {
     text-align: center;
-    max-width: 620px;
+    max-width: 1200px;
     margin: 3rem auto;
     font-size: 1.6rem;
   }
@@ -21,8 +21,55 @@
       border: 1px solid $color-grey-light;
       width: 100%;
       text-align: center;
+      padding: 3.5rem 0;
+
       &:not(:last-child) {
         border-right: none;
+      }
+
+      .fas,
+      .far {
+        font-size: 2.2rem;
+        color: blue;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        max-width: 80%;
+        margin: 0 auto;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .our_customers {
+    background-color: $color-grey-light;
+    padding: 5rem 1rem;
+
+    .customers_title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .customers_wrapper {
+      display: flex;
+      justify-content: space-around;
+      .customers {
+        font-size: 2rem;
+        width: calc(100% / 3);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
       }
     }
   }
