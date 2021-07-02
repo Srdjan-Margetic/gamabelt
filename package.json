@@ -1,5 +1,5 @@
 {
-  "name": "gamabelt",
+  "name": "dalia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [
-    "gamabelt"
+    "dalia"
   ],
   "author": "Srdjan Margetic",
   "license": "ISC"

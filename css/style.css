@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 *,
 *::after,
 *::before {
@@ -15,92 +16,60 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.about {
-  padding: 10rem 0; }
-  .about_title {
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 4rem; }
-  .about_text {
-    text-align: center;
-    max-width: 1200px;
-    margin: 3rem auto;
-    font-size: 1.6rem; }
-  .about .card-wrapper {
-    display: flex;
-    justify-content: space-between; }
-    .about .card-wrapper .card {
-      border: 1px solid #8d8d8d;
-      width: 100%;
-      text-align: center;
-      padding: 3.5rem 0; }
-      .about .card-wrapper .card:not(:last-child) {
-        border-right: none; }
-      .about .card-wrapper .card .fas,
-      .about .card-wrapper .card .far {
-        font-size: 2.2rem;
-        color: blue;
-        margin-bottom: 1rem; }
-      .about .card-wrapper .card h3 {
-        margin-bottom: 1rem;
-        font-size: 2.2rem; }
-      .about .card-wrapper .card p {
-        margin-bottom: 1rem;
-        font-size: 1.6rem;
-        max-width: 80%;
-        margin: 0 auto;
-        line-height: 1.2; }
-  .about .our_customers {
-    background-color: #8d8d8d;
-    padding: 5rem 1rem; }
-    .about .our_customers .customers_title {
-      font-size: 3rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 1rem; }
-    .about .our_customers .customers_wrapper {
-      display: flex;
-      justify-content: space-around; }
-      .about .our_customers .customers_wrapper .customers {
-        font-size: 2rem;
-        width: calc(100% / 3);
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold; }
-
-.landing-wrapper {
+.landing_page {
   position: relative;
-  height: 100vh;
-  background: url("/img/bg.jpg") no-repeat center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../../img/miami.jpg), url(../../img/mask.jpg) center no-repeat;
+  background-blend-mode: screen;
   background-size: cover; }
-  .landing-wrapper .header {
-    display: flex;
-    padding: 0 20px;
-    color: #ffffff;
-    justify-content: space-between; }
-    .landing-wrapper .header .logo img {
-      width: 250px; }
-    .landing-wrapper .header .navigation {
-      width: 100%;
-      max-width: 60rem;
-      margin: auto 0; }
-      .landing-wrapper .header .navigation ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none; }
-        .landing-wrapper .header .navigation ul li {
-          vertical-align: middle; }
-          .landing-wrapper .header .navigation ul li a {
-            text-decoration: none;
-            font-size: 1.8rem;
-            color: #ffffff; }
-  .landing-wrapper .intro-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-    .landing-wrapper .intro-text h1 {
-      color: #ffffff;
-      text-align: center;
-      font-size: 6rem; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; }
+  header .logo {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem; }
+  header .toggle {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background: url(../../img/menu.png) center no-repeat;
+    background-size: 3rem;
+    cursor: pointer; }
+
+.sci {
+  position: absolute;
+  bottom: 4rem;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sci li {
+    list-style: none; }
+    .sci li a {
+      display: inline-block;
+      text-decoration: none;
+      transform: scale(0.6); }
+
+.title {
+  padding: 5rem; }
+  .title h1 {
+    font-size: 12rem;
+    line-height: 1em;
+    color: black;
+    font-family: 'Kaushan Script', cursive; }
